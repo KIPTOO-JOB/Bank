@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 
 function SearchBar({ query, setQuery }) {
-	console.log(query);
+	// console.log(query);
 
 	// const filletedItems = useMemo(() => {
 	// 	ret;

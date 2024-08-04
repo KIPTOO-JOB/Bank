@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Details from "./Details";
 
-const Hero = ({}) => {
-	console.log(query);
+const Hero = ({ query }) => {
+	// console.log(query);
 
 	const [data, setData] = useState([]);
 	const Url = "https://bank-db.vercel.app/transactions";
@@ -12,7 +12,7 @@ const Hero = ({}) => {
 			.then((response) => response.json())
 			.then((data) => {
 				setData(data);
-				console.log("test", data);
+				// console.log("test", data);
 			});
 	}, []);
 	function handleClicked() {
@@ -23,7 +23,7 @@ const Hero = ({}) => {
 		<main className=" mt-[6rem] justify-center items-center md:m-46 ">
 			<div className="grid grid-rows-6  grid-flow-col  justify-center md:flex flex-wrap   ">
 				{data
-					// Filterng Method
+					// Filterng
 					.filter((data) =>
 						data.category.toLowerCase().includes(query.toLowerCase())
 					)
