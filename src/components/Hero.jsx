@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Details from "./Details";
 
-const Hero = ({ query }) => {
+const Hero = ({}) => {
 	console.log(query);
 
 	const [data, setData] = useState([]);
-	const Url = "http://localhost:3000/transactions";
+	const Url = "https://bank-db.vercel.app/transactions";
 	useEffect(() => {
 		fetch(Url)
 			.then((response) => response.json())

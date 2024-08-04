@@ -13,7 +13,7 @@ const Details = (prop) => {
 	const [transaction, setTransaction] = useState("");
 
 	useEffect(() => {
-		fetch(`http://localhost:3000/transactions/${id}`)
+		fetch(`https://bank-db.vercel.app/transactions/${id}`)
 			.then((res) => res.json())
 			.then((data) => setTransaction(data));
 	}, []);
