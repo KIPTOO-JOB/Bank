@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 // import { log } from "console";
 
 const Details = (m) => {
-	console.log(m);
+	// console.log(m);
 
 	const { id } = useParams();
 

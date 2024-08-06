@@ -13,7 +13,7 @@ import { Url } from "./Hero";
 
 function Form({ data, setData }) {
 	// console.log("params", id);ta, setData }) {
-	console.log(data);
+	// console.log(data);
 
 	const [formData, setFormData] = useState({
 		id: 0,
