@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Buttons = () => {
 	return (
-		<div className=" flex flex-col  shadow-md items-center justify-center text-center p-3 ">
+		<div className=" flex flex-col  shadow-md items-center justify-center text-center p-3  ">
 			<div className=" hover:bg-slate-50 rounded-md">
 				<Link to="/" className=" justify-center text-center">
 					<button className=" shadow-lg p-4 flex flex-row justify-center  items-center rounded-full   text-center hover:bg-slate-100 ">

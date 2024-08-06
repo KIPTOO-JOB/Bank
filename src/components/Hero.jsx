@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Details from "./Details";
-
+import Form from "./Form";
+export const Url = "https://bank-db.vercel.app/transactions";
 const Hero = ({ query }) => {
 	// console.log(query);
 
 	const [data, setData] = useState([]);
-	const Url = "https://bank-db.vercel.app/transactions";
+
 	useEffect(() => {
 		fetch(Url)
 			.then((response) => response.json())
@@ -15,13 +16,11 @@ const Hero = ({ query }) => {
 				// console.log("test", data);
 			});
 	}, []);
-	function handleClicked() {
-		console.log(alert("hell"));
-	}
 
 	return (
 		<main className=" mt-[6rem] justify-center items-center md:m-46 ">
-			<div className="grid grid-rows-6  grid-flow-col  justify-center md:flex flex-wrap   ">
+			<Form data={data} setData={setData} />
+			<div className="grid grid-rows-6  grid-flow-col  justify-center sm:flex-row  md:flex flex-wrap   ">
 				{data
 					// Filterng
 					.filter((data) =>

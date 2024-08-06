@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 
 function SearchBar({ query, setQuery }) {
 	// console.log(query);
