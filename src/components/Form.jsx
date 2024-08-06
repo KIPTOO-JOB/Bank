@@ -46,7 +46,7 @@ function Form({ data, setData }) {
 		<div className=" shadow-md m-5">
 			<form
 				onSubmit={handleSubmit}
-				className=" flex flex-col justify-center  items-center  space-x-5 space-y-2  "
+				className=" flex flex-col justify-center  items-center  p-6  space-y-4   "
 			>
 				<label htmlFor="" className=" mt-2 flex  font-bold">
 					Description
@@ -100,7 +100,7 @@ function Form({ data, setData }) {
 					id=""
 				/>
 				<button
-					className=" items-center m-4 w-52 justify-center flex-row-reverse hover:bg-slate-400  flex p-4 rounded-md  border border-gray-300 focus:outline-none "
+					className=" font-bold  items-center m-4 w-52 justify-center flex-row-reverse hover:bg-slate-400  flex p-4 rounded-md  border border-gray-300 focus:outline-none "
 					type="submit"
 				>
 					<span className="pl-2 ">
