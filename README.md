@@ -25,4 +25,4 @@ Welcome to the BANK OF FLARTION This project is a web-based application that all
 
 ## HERE IS MY LIVE LINK :)
 
-[CLICK ME ](https://rental-ruddy-theta.vercel.app/)
+[CLICK ME ](https://bank-six-theta.vercel.app/)
