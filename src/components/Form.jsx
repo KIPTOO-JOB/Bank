@@ -46,9 +46,9 @@ function Form({ data, setData }) {
 		<div className=" shadow-md m-5">
 			<form
 				onSubmit={handleSubmit}
-				className=" flex flex-col justify-center  items-center  space-x-5  "
+				className=" flex flex-col justify-center  items-center  space-x-5 space-y-2  "
 			>
-				<label htmlFor="" className=" mt-2 flex-1 font-bold">
+				<label htmlFor="" className=" mt-2 flex  font-bold">
 					Description
 				</label>
 				<input
@@ -57,7 +57,7 @@ function Form({ data, setData }) {
 					name="description"
 					id=""
 					placeholder=" Description"
-					className="p-2 border-b"
+					className="w-[25rem]  p-3 border border-gray-300 rounded-lg focus:outline-none"
 					onChange={handleChange}
 				/>
 				<label htmlFor="" className=" mt-2 font-bold">
@@ -66,11 +66,17 @@ function Form({ data, setData }) {
 				</label>
 				<input
 					type="number"
-					name=" amount "
+					name="amount"
 					placeholder="Amount Spent"
 					onChange={handleChange}
 					id=""
-					className=" p-2  border-b"
+					className="
+					w-[25rem]
+					p-3
+					border
+					border-gray-300
+					rounded-lg
+					focus:outline-none"
 				/>
 				<label htmlFor="" className=" mt-2 font-bold">
 					Category
@@ -80,21 +86,21 @@ function Form({ data, setData }) {
 					name="category"
 					placeholder="Category"
 					onChange={handleChange}
+					className="w-[25rem]  p-3 border border-gray-300  rounded-lg focus:outline-none"
 					id=""
-					className=" p-2  border-b "
 				/>
 				<label className=" mt-2 font-bold"> Date</label>
 
 				<input
 					onChange={handleChange}
 					type="date"
-					name=" date"
+					name="date"
 					placeholder="Date"
+					className="w-[25rem]  p-3 border border-gray-300 rounded-lg focus:outline-none"
 					id=""
-					className=" p-2  border-b  text-gray-300"
 				/>
 				<button
-					className=" bg-slate-400  p-2 flex-row-reverse flex text-xl  justify-center items-center   rounded-md  m-4 hover:bg-slate-300"
+					className=" items-center m-4 w-52 justify-center flex-row-reverse hover:bg-slate-400  flex p-4 rounded-md  border border-gray-300 focus:outline-none "
 					type="submit"
 				>
 					<span className="pl-2 ">

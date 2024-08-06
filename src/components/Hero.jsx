@@ -20,7 +20,7 @@ const Hero = ({ query }) => {
 	return (
 		<main className=" mt-[6rem] justify-center items-center md:m-46 ">
 			<Form data={data} setData={setData} />
-			<div className="grid grid-rows-6  grid-flow-col  justify-center sm:flex-row  md:flex flex-wrap   ">
+			<div className="grid grid-rows-6  grid-flow-col  justify-center sm:flex`  md:flex flex-wrap   ">
 				{data
 					// Filterng
 					.filter((data) =>
