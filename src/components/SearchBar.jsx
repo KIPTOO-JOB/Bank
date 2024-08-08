@@ -29,7 +29,7 @@ function SearchBar({ query, setQuery }) {
 				onChange={(e) => setQuery(e.target.value)}
 				value={query}
 				type="text"
-				className="flex  w-full rounded-md border-0 py-1.5 pl-7 pr-5 md:pr-20  ring-1 ring-inset  placeholder:text-gray-400 focus:ring-0 focus:none focus:ring-indigo-100 sm:text-sm sm:leading-6 p-6"
+				className="flex  py-1.5 pl-7 pr-5 md:pr-20 w-[25rem]  p-3 border border-gray-300 rounded-lg focus:outline-none"
 				placeholder="Search "
 			></input>
 		</div>

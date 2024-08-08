@@ -1,28 +1,51 @@
-# BANK OF FLARTION
+# Bank Transactions App
 
-Welcome to the BANK OF FLARTION This project is a web-based application that allows users to view and list real estate properties. Whether you're looking to rent, buy, or list a property, Kejani is here to help!
-
-## Features
-
-- [x] View a list of real estate properties.
-- [x] Add new properties via a form.
-- [x] Responsive design for mobile and desktop views.
-- [x] Interactive navigation menu for easy access to different sections.
+This project is a React application for managing and viewing recent bank transactions. Users can add, view, filter, and delete transactions. The application fetches and persists data using a JSON server.
 
 ## Features
 
-- View a list of real estate properties.
-- Add new properties via a form if you are the Land lord.
-- Responsive design for mobile and desktop views.
-- Interactive navigation menu for easy access to different sections.
+- [x] View a list of bank transactions.
+- [x] Add new transactions via a form.
+- [x] Filter transactions using a search bar.
+- [ ] Delete transactions from the list.
 
-## Installation
+## Technologies Used
+
+- [x] React + Vite
+- [x] JSON Server
+- [x] Fetch API
+
+## Getting Started :-
+
+#### Prerequisites
+
+- [x] Node.js and npm installed on your machine.
+
+#### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/kejani-real-estate.git
-   ```
 
-## HERE IS MY LIVE LINK :)
+```
+bash
+git clone https://github.com/KIPTOO-JOB/Bank.git
+```
 
-[CLICK ME ](https://bank-six-theta.vercel.app/)
+cd phase-2-wk1-code-challenge
+
+2. Install dependencies:
+
+```
+bash
+npm install
+```
+
+3. Set up JSON Server:
+
+```
+bash
+npx json-server --watch ./src/db/db.json
+```
+
+# Here is the live link
+
+[CLICK ME !!! :) ](https://bank-six-theta.vercel.app/)

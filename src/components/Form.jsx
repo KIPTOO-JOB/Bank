@@ -22,7 +22,7 @@ function Form({ data, setData }) {
 		category: "",
 		amount: 0,
 	});
-
+	// setFormData("");
 	const handleChange = (e) => {
 		e.preventDefault();
 		const { name, value } = e.target;
@@ -40,6 +40,7 @@ function Form({ data, setData }) {
 		})
 			.then((res) => res.json())
 			.then((transaction) => setData([...data, transaction]));
+		setFormData("");
 	};
 
 	return (
